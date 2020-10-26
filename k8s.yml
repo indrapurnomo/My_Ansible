@@ -1,0 +1,10 @@
+- name: Install K8s
+  hosts: server-k8s
+  user: root
+  sudo: yes
+  roles:
+    - kops
+    - kubectl
+    - awscli
+    - k8s
+
