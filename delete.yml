@@ -3,9 +3,5 @@
   user: root
   sudo: yes
   roles:
-    - kops
-    - kubectl
-    - awscli
-    - genssh
-    - k8s
+    - delk8s
 
