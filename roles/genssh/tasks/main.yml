@@ -1,0 +1,6 @@
+- name: generate ssh
+  shell: ssh-keygen -t rsa -N "" -f ~/.ssh/id_rsa <<< y
+  args:
+    executable: /bin/bash
+#perintah tersebut akan masuk ke folder /root/.ssh/
+
