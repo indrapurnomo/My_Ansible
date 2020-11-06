@@ -1,3 +1,8 @@
 
 [server-k8s]
 18.224.67.23
+#jangan lupa copy id_rsa.pub ke .ssh/authorized_keys server tujuan
+
+#bisa pake .pem jadi ga usah masuk super user/sudo su, yg diatas pake sudo su  
+#[server-k8s] 
+#18.224.67.23 ansible_user=ubuntu ansible_ssh_private_key_file=/home/indra404/Downloads/indrakey.pem
