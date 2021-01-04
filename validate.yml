@@ -1,7 +1,0 @@
-- name: Validasi K8s
-  hosts: server-k8s
-  user: root
-  sudo: yes
-  roles:
-    - valk8s
-
