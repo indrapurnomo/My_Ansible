@@ -1,6 +1,6 @@
 
 [server-k8s]
-18.224.67.23
+18.224.63.47
 #jangan lupa copy id_rsa.pub ke .ssh/authorized_keys server tujuan
 
 #bisa pake .pem jadi ga usah masuk super user/sudo su, yg diatas pake sudo su  

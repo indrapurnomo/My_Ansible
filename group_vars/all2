@@ -1,0 +1,8 @@
+#AWS Key
+access_key: your_access_key
+secret_key: your_secret_key
+
+#export kops
+bucket_name: your_bucket_name
+cluster_name: your_cluster_name
+state_store: s3://your_bucket_name

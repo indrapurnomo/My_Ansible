@@ -1,6 +1,9 @@
 
+#- name: create cluster k8s
+#  command: kops create cluster --zones=us-east-2a --node-count=1 --master-count=1 --node-size=t2.micro --master-size=t2.small --name={{ cluster_name }} --state={{ state_store }} --ssh-public-key=/root/.ssh/id_rsa.pub
 - name: create cluster k8s
-  command: kops create cluster --zones=us-east-1a --node-count=3 --master-count=1 --node-size=t2.micro --master-size=t2.small --name={{ cluster_name }} --state={{ state_store }} --ssh-public-key=/root/.ssh/id_rsa.pub
+  command: kops create cluster --zones=us-east-2a --node-count=1 --master-count=1 --node-size=t2.micro --master-size=t2.small --name={{ cluster_name }} --vpc=vpc-007c507d1e37c3081 --subnets=subnet-0d4359efc89f2f4c1,subnet-079e83aeeb6758e96,subnet-08433f3f53742d093 --state={{ state_store }} --ssh-public-key=/root/.ssh/id_rsa.pub
+#subnet VPC yg telah dibuat
 - name: update cluster
   command: kops update cluster --name {{ cluster_name }} --state {{ state_store }} --yes
 
