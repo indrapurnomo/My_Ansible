@@ -1,4 +1,4 @@
-- name: Install K8s
+- name: Install Kubernetes Cluster VPC AWS
   hosts: server-k8s
   user: root
   sudo: yes
